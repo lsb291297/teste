@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Embed</title>
+</head>
+<body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const postId = urlParams.get('postid');
+        if (postId) {
+            window.location.href = `https://www.instagram.com/p/C4l3M-TRx9V/`;
+        } else {
+            document.write('No post selected.');
+        }
+    </script>
+</body>
+</html>
